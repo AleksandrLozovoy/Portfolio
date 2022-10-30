@@ -12,6 +12,22 @@ body {
   color: @black;
 }
 
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+  color: @black;
+}
+
 *,
 *:before,
 *:after {
@@ -22,3 +38,4 @@ body {
 @import "blocks/container";
 @import "blocks/header";
 @import "blocks/headerUser";
+@import "blocks/headerNav";

@@ -11,6 +11,11 @@ body {
   font-size: 1.5rem;
   color: @black;
 }
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
 
 button {
   padding: 0;
@@ -19,6 +24,15 @@ button {
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 a:active,
@@ -35,7 +49,8 @@ a {
 }
 
 // blocks
-@import "blocks/container";
-@import "blocks/header";
-@import "blocks/headerUser";
-@import "blocks/headerNav";
+@import "blocks/container.less";
+@import "blocks/header.less";
+@import "blocks/headerUser.less";
+@import "blocks/headerNav.less";
+@import "blocks/intro.less";

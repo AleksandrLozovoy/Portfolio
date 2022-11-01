@@ -1,0 +1,67 @@
+// main: ../style.less
+
+.portfolio__inner {
+}
+.portfolio__nav {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio__nav-link {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: fade(@black, 70%);
+}
+
+.portfolio__col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -15px;
+}
+
+.portfolio__col-item {
+  margin: 10px;
+  max-width: 370px;
+  width: 33, 3333%;
+  border: 1px solid;
+  border-color: fade(#707070, 30%);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 4px fade(@black, 25%);
+}
+
+.portfolio__content {
+  left: 0;
+  bottom: 0;
+
+  margin: 1.5rem 1.3rem 3rem 1.3rem;
+}
+
+.portfolio__content-category {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+
+.portfolio__content-info {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+
+.nav__btn--works {
+  display: block;
+  margin: 40px auto;
+  transition: background-color 0.2s linear, color 0.2s linear,
+    box-shadow 0.2s linear;
+}
+
+.nav__btn--works:hover {
+  box-shadow: 2px 2px 10px fade(@black, 24%);
+  background-color: @black;
+  color: @white;
+}

@@ -1,0 +1,59 @@
+// main: ../style.less
+.biography__inner {
+  display: flex;
+  height: 607px;
+  max-width: 1072px;
+  margin: 0 auto;
+}
+
+.biography__photo {
+  width: 50%;
+}
+
+.biography__content {
+  width: 50%;
+  margin-left: 6rem;
+}
+
+.biography__subtitle {
+  font-family: "Montserrat", sans-serif;
+  color: @black;
+  font-size: 4.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.biography__title {
+  font-family: "Montserrat", sans-serif;
+  color: fade(@black, 15%);
+  font-size: 9.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.biography__text {
+  margin-bottom: 4rem;
+  font-family: "Montserrat", sans-serif;
+  color: @gray;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.biography__btn-hire,
+.biography__btn-resume {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px @black solid;
+  border-radius: 20px;
+  padding: 15px 50px 15px 50px;
+  transition: background-color 0.2s linear, color 0.2s linear,
+    box-shadow 0.2s linear;
+}
+
+.biography__btn-hire:hover,
+.biography__btn-resume:hover {
+  box-shadow: 2px 2px 10px fade(@black, 24%);
+  background-color: @black;
+  color: @white;
+}

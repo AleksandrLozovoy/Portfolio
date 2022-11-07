@@ -1,0 +1,56 @@
+// main: ../style.less
+.footer {
+  background-color: @black;
+  padding: 1.5rem 0;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  color: @gray;
+  border-right: 1px solid @gray;
+  padding-right: 3rem;
+  margin-right: 3rem;
+}
+
+.footer__logo {
+  margin-right: 1.8rem;
+}
+
+.footer__credits {
+  display: flex;
+}
+
+.footer__logos {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo--github {
+  margin-top: -5px;
+}
+
+.footer__nav-link {
+  color: @gray;
+  margin-right: 10px;
+}
+
+.footer__nav-link:hover {
+  color: @gray;
+  text-decoration: underline;
+}
+
+.nav__btn--footer {
+  color: @gray;
+  border-color: @gray;
+  padding: 11px 15px 9px 15px;
+  transition: background-color 0.2s linear, color 0.2s linear;
+  &:hover {
+    background-color: @white;
+    color: @gray;
+  }
+}

@@ -1,7 +1,122 @@
 // main: ../style.less
 .modal {
-  width: 100px;
-  height: 100px;
+  display: flex;
+  width: 100%;
+  height: 100%;
   padding: 0 1.5rem;
   background-color: rgba(6, 15, 49, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: auto;
+}
+
+.modal__dialog {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  background-color: @white;
+}
+
+// MODAL WORK
+
+.modal__work {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__close {
+  position: absolute;
+  width: 50px;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  transition: transform 0.2s linear;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+}
+
+.modal__work-img {
+  margin: -2rem 2rem -2rem -2.1rem;
+  position: relative;
+  overflow: hidden;
+  width: 65%;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+  }
+}
+
+.modal__work-content {
+  margin-right: 9.9rem;
+  margin-top: 5rem;
+  width: 35%;
+  color: @black;
+}
+
+.modal__work-name {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.modal__work-info {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 3.3rem;
+}
+
+.modal__works-clientName {
+  margin-bottom: 3.3rem;
+}
+
+.modal__works-client {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.modal__works-text {
+  margin-bottom: 12.9rem;
+}
+
+.modal__work-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-right: -9rem;
+}
+
+.modal__btn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal__prev {
+  display: flex;
+  transition: transform 0.2s linear;
+  img {
+    margin-right: 5px;
+  }
+}
+
+.modal__next {
+  display: flex;
+  transition: transform 0.2s linear;
+  img {
+    margin-left: 5px;
+  }
+}
+
+.modal__prev:hover,
+.modal__next:hover {
+  transform: translateY(-3px);
 }

@@ -340,9 +340,37 @@
 
     <!-- MODALS -->
 
-    <div class="modal">
+    <div class="modal" style="display: none;">
       <div class="modal__dialog">
-        <div class="modal__work"></div>
+        <div class="modal__work">
+          <button type="button" class="modal__close">
+            <img src="/images/close.svg" alt="">
+          </button>
+          <div class="modal__work-img">
+            <img src="https://via.placeholder.com/790/000000" alt="work">
+          </div>
+          <div class="modal__work-content">
+            <div class="modal__work-name">project title</div>
+            <div class="modal__work-info">Category | 2022 </div>
+            <div class="modal__works-client">
+              client:
+            </div>
+            <div class="modal__works-clientName">Creative Agency</div>
+            <div class="modal__works-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas, dignissim elit at, imperdiet eros.  </p>
+            </div>
+
+            <div class="modal__work-footer">
+              <div class="modal__prev">
+                <img src="/images/prev.svg"  width="25" alt="prev">
+                <button class="modal__btn modal__btn--prev">previous</button>
+              </div>
+              <div class="modal__next">
+                <button class="modal__btn modal__btn--prev">next</button>
+                <img src="/images/next.svg"  width="25" alt="next">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

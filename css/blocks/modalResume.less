@@ -1,0 +1,173 @@
+// main: ../style.less
+.resume {
+  padding: 2rem 21.6rem;
+}
+.resume__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5.4rem;
+}
+
+.resume__btn {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.nav__btn--download {
+  padding: 10px 5px;
+  margin-right: 5px;
+}
+
+.nav__btn--print {
+  padding: 10px 45px;
+  margin-left: 5px;
+}
+
+.resume__col {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  max-width: 768px;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    background-color: @black;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+}
+
+.resume__item {
+  width: 50%;
+  &--left {
+    text-align: right;
+    padding-right: 4.8rem;
+  }
+  &--right {
+    padding-left: 4.8rem;
+  }
+}
+
+// EDUCATION
+.resume__education-item {
+  margin-bottom: 1.5rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.resume__education-time {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.resume__education-prof {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+// EXPERIENCE
+.resume__experience-item {
+  margin-bottom: 1rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.resume__experience-time {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.resume__experience-content {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+// SKILLS
+.resume__skills {
+  margin-bottom: 2.5rem;
+}
+.resume__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: @black;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.resume__skills-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.resume__skills-left {
+  max-width: 12rem;
+  width: 100%;
+}
+.resume__skills-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: @black;
+}
+
+.resume__skills-right {
+  padding-left: 2rem;
+}
+
+.resume__skills-full {
+  width: 139px;
+  height: 6px;
+  background-color: #efefef;
+}
+
+.resume__skills-progress {
+  height: 100%;
+  background-color: @gray;
+}
+
+// AWARDS
+
+.resume__awards {
+  margin-bottom: 2rem;
+}
+
+.resume__awards-item {
+  margin-bottom: 1rem;
+}
+
+.resume__awards-time {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.resume__awards-content {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.nav__btn--download:hover,
+.nav__btn--print:hover {
+  box-shadow: 2px 2px 10px fade(@black, 24%);
+  background-color: @black;
+  color: @white;
+}

@@ -338,7 +338,7 @@
   <!-- MODAL WORK -->
 
   <div class="modal" style="display: none;">
-    <div class="modal__dialog">
+    <div class=" modal__dialog modal__dialog--work">
       <div class="modal__work">
         <button type="button" class="modal__close">
           <img src="/images/close.svg" alt="">
@@ -571,6 +571,55 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- MODAL RESUME -->
+  <div class="modal" style="display: none;">
+    <div class="modal__dialog modal__dialog--small">
+      <button type="button" class="modal__close">
+        <img src="/images/close.svg" alt="">
+      </button>
+      <div class="contacts">
+        <div class="contacts__col">
+          <div class="contacts__item contacts__item--left">
+            <div class="contacts__header">
+              <h2 class="contacts__title">LET'S TALK!</h2>
+              <h3 class="contacts__subtitle">CALL ME OR SEND ME A REQUEST</h3>
+            </div>
+            <ul class="contacts__info">
+              <li class="contacts__info-item">
+                <img src="/images/phone.svg" width="20px" alt="phone">
+                8-911-848-27-34
+              </li>
+              <li class="contacts__info-item">
+                <img src="/images/mail.svg" width="20px" alt="mail">
+                lozovoialeksandr2019@gmail.com
+              </li>
+            </ul>
+
+            <form action="/" method="post">
+              <label for="input-email" class="label">Adress e-mail</label>
+              <input type="text" class="input" id="input-email" placeholder="type your e-mail...">
+            </form>
+
+            <form action="/" method="post">
+              <label for="input-request" class="label">Request</label>
+              <input type="text" class="input input--request" id="input-request" placeholder="Type your request...">
+            </form>
+
+            <div class="contacts__btn">
+              <a class="nav__btn nav__btn--contacts" href="#">SEND</a>
+            </div>
+
+          </div>
+          <div class="contacts__item">
+            <img src="https://via.placeholder.com/450x676/000000" alt="photo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>

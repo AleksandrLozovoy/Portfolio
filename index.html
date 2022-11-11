@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -80,78 +81,78 @@
     <div class="container">
       <div class="portfolio__inner">
         <div class="portfolio__nav">
-          <a href="" class="portfolio__nav-link">All</a>
-          <a href="" class="portfolio__nav-link">App</a>
-          <a href="" class="portfolio__nav-link">Lendings</a>
-          <a href="" class="portfolio__nav-link">Shops</a>
+          <a href="#" class="portfolio__nav-link" data-filter="all">All</a>
+          <a href="#" class="portfolio__nav-link" data-filter="app">App</a>
+          <a href="#" class="portfolio__nav-link" data-filter="lendings">Lendings</a>
+          <a href="#" class="portfolio__nav-link" data-filter="shops">Shops</a>
         </div>
         <div class="portfolio__col">
-          <div class="portfolio__col-item">
+          <div class="portfolio__col-item" data-category="app">
             <div>
               <img src="https://via.placeholder.com/370x300/000000" />
             </div>
             <div class="portfolio__content">
-              <div class="portfolio__content-category">category</div>
+              <div class="portfolio__content-category">category:app</div>
               <div class="portfolio__content-info">
                 <div class="portfolio__content-name">project name</div>
                 <div class="portfolio__content-year">2022</div>
               </div>
             </div>
           </div>
-          <div class="portfolio__col-item">
+          <div class="portfolio__col-item" data-category="lendings">
             <div>
               <img src="https://via.placeholder.com/370x300/000000" />
             </div>
             <div class="portfolio__content">
-              <div class="portfolio__content-category">category</div>
+              <div class="portfolio__content-category">category: lendings</div>
               <div class="portfolio__content-info">
                 <div class="portfolio__content-name">project name</div>
                 <div class="portfolio__content-year">2022</div>
               </div>
             </div>
           </div>
-          <div class="portfolio__col-item">
+          <div class="portfolio__col-item" data-category="app">
             <div>
               <img src="https://via.placeholder.com/370x300/000000" />
             </div>
             <div class="portfolio__content">
-              <div class="portfolio__content-category">category</div>
+              <div class="portfolio__content-category">category: app</div>
               <div class="portfolio__content-info">
                 <div class="portfolio__content-name">project name</div>
                 <div class="portfolio__content-year">2022</div>
               </div>
             </div>
           </div>
-          <div class="portfolio__col-item">
+          <div class="portfolio__col-item" data-category="lendings">
             <div>
               <img src="https://via.placeholder.com/370x300/000000" />
             </div>
             <div class="portfolio__content">
-              <div class="portfolio__content-category">category</div>
+              <div class="portfolio__content-category">category: lendings</div>
               <div class="portfolio__content-info">
                 <div class="portfolio__content-name">project name</div>
                 <div class="portfolio__content-year">2022</div>
               </div>
             </div>
           </div>
-          <div class="portfolio__col-item">
+          <div class="portfolio__col-item" data-category="shops">
             <div>
               <img src="https://via.placeholder.com/370x300/000000" />
             </div>
             <div class="portfolio__content">
-              <div class="portfolio__content-category">category</div>
+              <div class="portfolio__content-category">category: shops </div>
               <div class="portfolio__content-info">
                 <div class="portfolio__content-name">project name</div>
                 <div class="portfolio__content-year">2022</div>
               </div>
             </div>
           </div>
-          <div class="portfolio__col-item">
+          <div class="portfolio__col-item" data-category="lendings">
             <div>
               <img src="https://via.placeholder.com/370x300/000000" />
             </div>
             <div class="portfolio__content">
-              <div class="portfolio__content-category">category</div>
+              <div class="portfolio__content-category">category: lendings</div>
               <div class="portfolio__content-info">
                 <div class="portfolio__content-name">project name</div>
                 <div class="portfolio__content-year">2022</div>
@@ -304,7 +305,7 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!--FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
@@ -334,8 +335,8 @@
     </div>
   </footer>
 
-  <!-- MODALS -->
-  <!-- MODAL WORK -->
+  <!--MODALS -->
+  <!--MODAL WORK-->
 
   <div class="modal" style="display: none;">
     <div class=" modal__dialog modal__dialog--work">
@@ -354,12 +355,17 @@
           </div>
           <div class="modal__works-clientName">Creative Agency</div>
           <div class="modal__works-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus.
+              Sed
               augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum
-              consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui
-              sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci luctus
-              et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec sit
-              amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla egestas,
+              consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent
+              dui
+              sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci
+              luctus
+              et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec
+              sit
+              amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla
+              egestas,
               dignissim elit at, imperdiet eros. </p>
           </div>
 
@@ -619,6 +625,9 @@
       </div>
     </div>
   </div>
+  <!--JS -->
+
+  <script src="JS/app.js"></script>
 
 </body>
 

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
 </head>
 
 <body>
@@ -37,11 +37,12 @@
           <a href="#" class="nav__link">About me</a>
           <a href="#" class="nav__link">Blog</a>
           <a href="#" class="nav__link">Contact</a>
-          <button class="nav__btn">Hire me</button>
+          <button class="nav__btn" data-modal="#modal_hire">Hire me</button>
         </div>
       </div>
     </div>
   </div>
+
   <!-- INTRO -->
   <section class="intro">
     <div class="container">
@@ -62,8 +63,8 @@
             </a>
           </div>
           <div class="intro__btn">
-            <button type="button" class="intro__btn-hire">Hire me</button>
-            <button type="button" class="intro__btn-resume">
+            <button type="button" class="intro__btn-hire" data-modal="#modal_hire">Hire me</button>
+            <button type="button" class="intro__btn-resume" data-modal="#modal_resume">
               See my resume
             </button>
           </div>
@@ -87,7 +88,7 @@
           <a href="#" class="portfolio__nav-link" data-filter="shops">Shops</a>
         </div>
         <div class="portfolio__col">
-          <div class="portfolio__col-item" data-category="app">
+          <div class="portfolio__col-item" data-modal="#modal_work_1" data-category="app">
             <div>
               <img src="https://via.placeholder.com/370x300/000000" />
             </div>
@@ -200,8 +201,8 @@
             </p>
           </div>
           <div class="biography__btn">
-            <button type="button" class="biography__btn-hire">Hire me</button>
-            <button type="button" class="biography__btn-resume">
+            <button type="button" class="biography__btn-hire" data-modal="#modal_hire">Hire me</button>
+            <button type="button" class="biography__btn-resume" data-modal="#modal_resume">
               See my resume
             </button>
           </div>
@@ -329,7 +330,7 @@
           <a href="" class="footer__nav-link">About me</a>
           <a href="" class="footer__nav-link">Blog</a>
           <a href="" class="footer__nav-link">Contact</a>
-          <button class="nav__btn nav__btn--footer" type="button">hire me</button>
+          <button class="nav__btn nav__btn--footer" type="button" data-modal="#modal_hire">hire me</button>
         </div>
       </div>
     </div>
@@ -338,10 +339,10 @@
   <!--MODALS -->
   <!--MODAL WORK-->
 
-  <div class="modal" style="display: none;">
+  <div class="modal" id="modal_work_1">
     <div class=" modal__dialog modal__dialog--work">
       <div class="modal__work">
-        <button type="button" class="modal__close">
+        <button type="button" class="modal__close" data-close="modal_close">
           <img src="/images/close.svg" alt="">
         </button>
         <div class="modal__work-img">
@@ -385,9 +386,9 @@
   </div>
 
   <!-- MODAL RESUME -->
-  <div class="modal" style="display: none;">
+  <div class="modal" id="modal_resume">
     <div class="modal__dialog">
-      <button type="button" class="modal__close">
+      <button type="button" class="modal__close" data-close="modal_close">
         <img src="/images/close.svg" alt="">
       </button>
       <div class="resume">
@@ -579,11 +580,11 @@
     </div>
   </div>
 
-  <!-- MODAL RESUME -->
-  <div class="modal" style="display: none;">
+  <!-- MODAL CONTACTS -->
+  <div class="modal" id="modal_hire">
     <div class="modal__dialog modal__dialog--small">
-      <button type="button" class="modal__close">
-        <img src="/images/close.svg" alt="">
+      <button type="button" class="modal__close" data-close="modal_close">
+        <img src="/images/closeWhite.svg" alt="">
       </button>
       <div class="contacts">
         <div class="contacts__col">

@@ -32,9 +32,9 @@ $(function () {
 
     setTimeout(function () {
       $(modalID).find(".modal__dialog").css({
-        transform: "rotateX(0)",
+        transform: "translateY(0)",
       });
-    }, 200);
+    }, 300);
   });
 
   let modalClose = $("[data-close]");
@@ -42,14 +42,27 @@ $(function () {
   modalClose.on("click", function (event) {
     event.preventDefault();
 
-    $(modalID).removeClass("show");
-    $("body").removeClass("no-scroll");
+    setTimeout(function () {
+      $(modalID).removeClass("show");
+      $("body").removeClass("no-scroll");
+    }, 300);
+
+    $(modalID).find(".modal__dialog").css({
+      transform: "translateY(-1000px)",
+    });
   });
 
   $(".modal").on("click", function () {
     let $this = $(this);
-    $this.removeClass("show");
-    $("body").removeClass("no-scroll");
+
+    setTimeout(function () {
+      $this.removeClass("show");
+      $("body").removeClass("no-scroll");
+    }, 300);
+
+    $(modalID).find(".modal__dialog").css({
+      transform: "translateY(-1000px)",
+    });
   });
 
   $(".modal__dialog").on("click", function (event) {

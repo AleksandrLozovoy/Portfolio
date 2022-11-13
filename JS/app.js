@@ -35,6 +35,8 @@ $(function () {
         transform: "translateY(0)",
       });
     }, 300);
+
+    $("#workSlider").slick("setPosition");
   });
 
   let modalClose = $("[data-close]");
@@ -70,4 +72,17 @@ $(function () {
   });
 
   // SLIDER : https://kenwheeler.github.io/slick/
+  $("#workSlider").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows: false,
+    dots: true,
+  });
+
+  $(".slickPrev").on("click", function (event) {
+    event.preventDefault();
+    $("#workSlider").slick("slickPrev");
+  });
 });

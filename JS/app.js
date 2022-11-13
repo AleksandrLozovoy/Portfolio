@@ -94,4 +94,23 @@ $(function () {
     let currentSlider = $(this).parents(".modal").find("[data-slider='slick']");
     currentSlider.slick("slickNext");
   });
+
+  // Scroll to sections
+
+  let header = $("#header");
+  let headerH = $(header).innerHeight();
+  console.log(headerH);
+  $("[data-scroll]").on("click", function (event) {
+    event.preventDefault();
+
+    let elementID = $(this).data("scroll");
+    let elementOffset = $(elementID).offset().top;
+
+    $("html, body").animate(
+      {
+        scrollTop: elementOffset - headerH,
+      },
+      500
+    );
+  });
 });

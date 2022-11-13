@@ -17,7 +17,7 @@
 
 <body>
   <!-- HEADER -->
-  <div class="header">
+  <div class="header" id="header">
     <div class="container">
       <div class="header__inner">
         <div class="header__user">
@@ -33,10 +33,11 @@
           </div>
         </div>
         <div class="header__nav">
-          <a href="#" class="nav__link">Work</a>
-          <a href="#" class="nav__link">About me</a>
-          <a href="#" class="nav__link">Blog</a>
-          <a href="#" class="nav__link">Contact</a>
+          <a href="#" class="nav__link" data-scroll="#work">Work</a>
+          <a href="#" class="nav__link" data-scroll="#about">About me</a>
+          <a href="#" class="nav__link" data-scroll="#reviews">Reviews</a>
+          <a href="#" class="nav__link" data-scroll="#blog">Blog</a>
+
           <button class="nav__btn" data-modal="#modal_hire">Hire me</button>
         </div>
       </div>
@@ -44,7 +45,7 @@
   </div>
 
   <!-- INTRO -->
-  <section class="intro">
+  <section class="intro" id="intro">
     <div class="container">
       <div class="intro__inner">
         <div class="intro__content">
@@ -78,7 +79,7 @@
   </section>
 
   <!-- PORTFOLIO -->
-  <div class="portfolio">
+  <div class="portfolio" id="work">
     <div class="container">
       <div class="portfolio__inner">
         <div class="portfolio__nav">
@@ -169,7 +170,7 @@
   </div>
 
   <!-- BIOGRAPHY -->
-  <section class="biography">
+  <section class="biography" id="about">
     <div class="container">
       <div class="biography__inner">
         <div class="biography__photo">
@@ -212,7 +213,7 @@
   </section>
 
   <!-- REVIEWS -->
-  <div class="reviews">
+  <div class="reviews" id="reviews">
     <div class="reviews__content">
       <div class="reviews__content-text">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
@@ -231,7 +232,7 @@
   </div>
 
   <!-- NEWS -->
-  <section class="news">
+  <section class="news" id="blog">
     <div class="container">
       <div class="news__inner">
         <div class="news__header">
@@ -686,7 +687,7 @@
     </div>
   </div>
   <!--JS -->
-  <script src="JS/slick.min.js"></script>
+  <script src="JS/slick.js"></script>
   <script src="JS/app.js"></script>
 
 

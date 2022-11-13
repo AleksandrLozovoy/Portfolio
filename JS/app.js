@@ -94,12 +94,25 @@ $(function () {
     let currentSlider = $(this).parents(".modal").find("[data-slider='slick']");
     currentSlider.slick("slickNext");
   });
+  //  Fixed header
+  let header = $("#header");
+  let intro = $("#intro");
+  let introH = $(intro).innerHeight();
+  let headerH = $(header).innerHeight();
+  let scrollPos = $(window).scrollTop();
 
+  $(window).on("scroll load resize", function () {
+    scrollPos = $(this).scrollTop();
+    introH = $(intro).innerHeight();
+
+    if (scrollPos > introH + headerH) {
+      header.addClass("fixed");
+    } else {
+      header.removeClass("fixed");
+    }
+  });
   // Scroll to sections
 
-  let header = $("#header");
-  let headerH = $(header).innerHeight();
-  console.log(headerH);
   $("[data-scroll]").on("click", function (event) {
     event.preventDefault();
 

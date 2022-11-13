@@ -1,10 +1,22 @@
 // main: ../style.less
 .header {
   padding: 1.8rem 0;
+  transition: 0.5s all;
 }
 
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.fixed {
+  position: fixed;
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  top: 0;
+  padding: 0.8rem 0;
+  opacity: 1;
+  visibility: visible;
+  z-index: 20000;
 }

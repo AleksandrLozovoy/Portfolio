@@ -68,4 +68,6 @@ $(function () {
   $(".modal__dialog").on("click", function (event) {
     event.stopPropagation();
   });
+
+  // SLIDER : https://kenwheeler.github.io/slick/
 });

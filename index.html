@@ -100,14 +100,14 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col-item" data-category="lendings">
+          <div class="portfolio__col-item" data-modal="#modal_work_2" data-category="lendings">
             <div>
               <img src="https://via.placeholder.com/370x300/000000" />
             </div>
             <div class="portfolio__content">
               <div class="portfolio__content-category">category: lendings</div>
               <div class="portfolio__content-info">
-                <div class="portfolio__content-name">project name</div>
+                <div class="portfolio__content-name">project name </div>
                 <div class="portfolio__content-year">2022</div>
               </div>
             </div>
@@ -346,8 +346,8 @@
           <img src="/images/close.svg" alt="">
         </button>
         <div class="modal__work-img">
-          <div id="workSlider">
-            <div class="div">
+          <div data-slider="slick">
+            <div>
               <img src="https://via.placeholder.com/790/000000" alt="work">
             </div>
             <div class="div">
@@ -378,12 +378,64 @@
           </div>
 
           <div class="modal__work-footer">
-            <div class="modal__prev">
+            <div class="modal__prev slickPrev">
               <img src="/images/prev.svg" width="25" alt="prev">
-              <button class="modal__btn modal__btn--prev slickPrev">previous</button>
+              <button class="modal__btn modal__btn--prev ">previous</button>
             </div>
-            <div class="modal__next">
-              <button class="modal__btn modal__btn--prev slickNext">next</button>
+            <div class="modal__next slickNext">
+              <button class="modal__btn modal__btn--prev ">next</button>
+              <img src="/images/next.svg" width="25" alt="next">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal_work_2">
+    <div class=" modal__dialog modal__dialog--work">
+      <div class="modal__work">
+        <button type="button" class="modal__close" data-close="modal_close">
+          <img src="/images/close.svg" alt="">
+        </button>
+        <div class="modal__work-img">
+          <div data-slider="slick">
+            <div>
+              <img src="https://via.placeholder.com/790/000000" alt="work">
+            </div>
+            <div class="div">
+              <img src="https://via.placeholder.com/790" alt="work">
+            </div>
+          </div>
+        </div>
+        <div class="modal__work-content">
+          <div class="modal__work-name">project title 2</div>
+          <div class="modal__work-info">Category | 2022 </div>
+          <div class="modal__works-client">
+            client:
+          </div>
+          <div class="modal__works-clientName">Creative Agency</div>
+          <div class="modal__works-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus.
+              Sed
+              augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum
+              consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent
+              dui
+              sapien, bibendum quis tempus dictum, auctor ac dui. Vestibulum ante ipsum primis in faucibus orci
+              luctus
+              et ultrices posuere cubilia Curae; Donec at mauris porta, ullamcorper sem quis, lobortis sem. Donec
+              sit
+              amet aliquet dui, at varius est. Phasellus porttitor finibus neque vel vehicula. Duis in nulla
+              egestas,
+              dignissim elit at, imperdiet eros. </p>
+          </div>
+
+          <div class="modal__work-footer">
+            <div class="modal__prev slickPrev">
+              <img src="/images/prev.svg" width="25" alt="prev">
+              <button class="modal__btn modal__btn--prev ">previous</button>
+            </div>
+            <div class="modal__next slickNext">
+              <button class="modal__btn modal__btn--prev ">next</button>
               <img src="/images/next.svg" width="25" alt="next">
             </div>
           </div>

@@ -1,4 +1,22 @@
 $(function () {
+  //  FIXED HEADER
+  let header = $("#header");
+  let intro = $("#intro");
+  let introH = $(intro).innerHeight();
+  let headerH = $(header).innerHeight();
+  let scrollPos = $(window).scrollTop();
+
+  $(window).on("scroll load resize", function () {
+    scrollPos = $(this).scrollTop();
+    introH = $(intro).innerHeight();
+
+    if (scrollPos > introH + headerH) {
+      header.addClass("fixed");
+    } else {
+      header.removeClass("fixed");
+    }
+  });
+
   // FILTER
   let filter = $("[data-filter]");
   filter.on("click", function (event) {
@@ -37,6 +55,7 @@ $(function () {
     }, 300);
 
     $(".slick-slider").slick("setPosition");
+    $(header).removeClass("fixed");
   });
 
   let modalClose = $("[data-close]");
@@ -94,23 +113,7 @@ $(function () {
     let currentSlider = $(this).parents(".modal").find("[data-slider='slick']");
     currentSlider.slick("slickNext");
   });
-  //  Fixed header
-  let header = $("#header");
-  let intro = $("#intro");
-  let introH = $(intro).innerHeight();
-  let headerH = $(header).innerHeight();
-  let scrollPos = $(window).scrollTop();
 
-  $(window).on("scroll load resize", function () {
-    scrollPos = $(this).scrollTop();
-    introH = $(intro).innerHeight();
-
-    if (scrollPos > introH + headerH) {
-      header.addClass("fixed");
-    } else {
-      header.removeClass("fixed");
-    }
-  });
   // Scroll to sections
 
   $("[data-scroll]").on("click", function (event) {

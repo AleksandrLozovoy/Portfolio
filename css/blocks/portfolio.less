@@ -2,6 +2,13 @@
 
 .portfolio__inner {
   margin-bottom: 12.5rem;
+
+  @media @tablet {
+    margin-bottom: 8rem;
+  }
+  @media @mobile {
+    margin-bottom: 4rem;
+  }
 }
 .portfolio__nav {
   display: flex;
@@ -20,6 +27,10 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-left: -15px;
+
+  @media @mobile-sm {
+    margin-left: 0;
+  }
 }
 
 .portfolio__col-item {
@@ -59,6 +70,13 @@
   margin: 40px auto;
   transition: background-color 0.2s linear, color 0.2s linear,
     box-shadow 0.2s linear;
+
+  @media @mobile {
+    margin-top: 25px;
+  }
+  @media @mobile-sm {
+    margin-top: 15px;
+  }
 }
 
 .nav__btn--works:hover {

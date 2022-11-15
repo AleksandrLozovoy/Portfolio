@@ -2,6 +2,10 @@
 .header__nav {
   display: flex;
   align-items: center;
+
+  @media @mobile {
+    display: none;
+  }
 }
 .nav__link {
   position: relative;
@@ -22,6 +26,10 @@
     left: 0;
     z-index: 1;
     transition: width 0.1s linear;
+  }
+
+  @media @tablet {
+    font-size: 1.2rem;
   }
 }
 
@@ -46,6 +54,10 @@
   &--header {
     border: 2px @white solid;
   }
+
+  @media @tablet {
+    font-size: 1.2rem;
+  }
 }
 
 .nav__btn:hover {
@@ -57,4 +69,19 @@
 .nav__btn--header:hover {
   color: @black;
   background-color: @white;
+}
+
+.nav__burger {
+  display: none;
+  width: 30px;
+  height: 30px;
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media @mobile {
+    display: block;
+  }
 }

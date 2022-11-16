@@ -5,6 +5,18 @@
 
   @media @mobile {
     display: none;
+    position: absolute;
+    flex-wrap: wrap;
+    text-align: right;
+    width: 100%;
+    top: 100%;
+    right: 0;
+    z-index: 10000;
+    padding: 5px 0;
+    background-color: fade(@black, 80%);
+    &.header__nav-mobile {
+      display: flex;
+    }
   }
 }
 .nav__link {
@@ -16,6 +28,9 @@
   text-transform: uppercase;
   margin: 0 1.7rem;
 
+  &:active {
+    outline: none;
+  }
   &:after {
     content: "";
     width: 0;
@@ -26,10 +41,20 @@
     left: 0;
     z-index: 1;
     transition: width 0.1s linear;
+
+    @media @mobile {
+      height: 0;
+    }
   }
 
   @media @tablet {
     font-size: 1.2rem;
+  }
+
+  @media @mobile {
+    width: 100%;
+    padding: 5px 0;
+    right: 0;
   }
 }
 
@@ -57,6 +82,10 @@
 
   @media @tablet {
     font-size: 1.2rem;
+  }
+
+  @media @mobile {
+    display: none;
   }
 }
 

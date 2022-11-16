@@ -1,4 +1,13 @@
 $(function () {
+  // mobile nav
+
+  let ClickBurger = $("#burger");
+  ClickBurger.on("click", function (event) {
+    event.preventDefault();
+    console.log(0);
+    $(".header__nav").toggleClass("header__nav-mobile");
+  });
+
   //  FIXED HEADER
   let header = $("#header");
   let intro = $("#intro");
